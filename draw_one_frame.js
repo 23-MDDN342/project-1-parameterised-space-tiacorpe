@@ -1,34 +1,35 @@
 
-function draw_one_frame(cur_frac) {
+function draw_one_frame(cur_frac){
   // My Code
   let deepGold = color("#9a6226");
-  let lightGold = color("#ffa500");
-
   background(deepGold);
-  // cogRotation();
-    let angle = cur_frac*2;
-    let xPosition = width/4
-    let yPosition = height/3
-    
+
+  let xPosition = width/4
+  let yPosition = height/4
+  let framerate = cur_frac* 4.8
+
+  mainClock();
+
+  // Cogs
   translate(xPosition, yPosition);
   push();
-  rotate(angle);
+  rotate(framerate);
   cog();
   pop();
   
   // second cog
-  translate(xPosition, yPosition);
+  translate(xPosition/2, yPosition/2);
   push();
-  rotate(-angle + TWO_PI/3);
+  rotate(-framerate + TWO_PI/3);
   cog();
   pop();
 }
 
 ////////// FUNCTIONS //////////
 // Cog Shape created by ChatGPT.
-function cog() {
+function cog(cur_frac) {
   let numTeeth = 8; // number of teeth on the cog
-  let cogRadius = 100; // radius of the cog
+  let cogRadius = 50; // radius of the cog; changes size
   let innerRadius = cogRadius * 0.85; // radius of the circle in the center of the cog
   let toothSize = cogRadius / 12; // length of each tooth
   let angleStep = TWO_PI / numTeeth; // angle between each tooth
@@ -56,14 +57,20 @@ function cog() {
 }
 
 // Main Clock
-function mainClock(){
-  // outer circle
-   ellipse(width/2, height/2, height, height);
-   fill(midGold);
+function mainClock(cur_frac){
+  let lightGold = color("#ffa500");
+  let ellipseSize = width/3
+  let tick = cur_frac* 4.8
+  
+  ellipseMode(CENTER);
+  fill(lightGold);
+  ellipse(width/2, height/2, ellipseSize, ellipseSize);
 
-  // inner circle
-  ellipse(width/2, height/2, height/1.2, height/1.2);
-  stroke(lightGold);
+  strokeWeight(2);
+  line(width/2, height/2, 275, 275);
+
+  // line(ellipseSize/2, ellipseSize/2, tick, tick);
+
 }
 
 

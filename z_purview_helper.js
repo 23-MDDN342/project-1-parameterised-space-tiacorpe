@@ -17,7 +17,7 @@ function saveBlocksImages(doZoom) {
   context.fillStyle="#FFFFFF";
   context.fillRect(0, 0, 960, 500);
   context.drawImage(this.canvas, 0, 0, 960, 500);
-  // save to browser
+  // save to brower
   var downloadMime = 'image/octet-stream';
   var imageData = offscreenCanvas.toDataURL('image/jpeg');
   imageData = imageData.replace('image/jpeg', downloadMime);
@@ -52,7 +52,7 @@ function saveBlocksImages(doZoom) {
     if (sy > this.canvas.height - sh) {
       sy = this.canvas.height - sh;
     }
-    // save to browser
+    // save to brower
     context.drawImage(this.canvas, sx, sy, sw, sh, 0, 0, 230, 120);
   }
   else {

@@ -466,7 +466,7 @@ Better rank ordering method by Stefan Gustavson in 2012.
   if (typeof define !== 'undefined' && define.amd) define(function() {return SimplexNoise;});
   // common js
   if (typeof exports !== 'undefined') exports.SimplexNoise = SimplexNoise;
-  // browser
+  // brower
   else if (typeof window !== 'undefined') window.SimplexNoise = SimplexNoise;
   // nodejs
   if (typeof module !== 'undefined') {
