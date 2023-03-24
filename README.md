@@ -1,5 +1,5 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10300842&assignment_repo_type=AssignmentRepo)
 ### 2023 MDDN342 Project 1: Parameterised Space
 
-23/3/2023
-Finished all the moving elements on the page. Also did some readjusting of the layers and strokes to get a more detailed look - in the triangles and the multiple ellipses in particular, I think this made a big difference. I spent some time cleaning up the code as well and making sure everything was working in regards to the width/height (noticed this was an issue with the stroke weight in the larger screen sizes). The colour palette I'm still a little torn on, as the overall composition isn't feeling too busy that brighter colours would be overwheming. I'm currently using 5 colours so I'll go from there - for now, the purple and gold is nice to look at.
+24/3/2023
+Have finalised my colour palette; I'm going with a blue with gold accents look. I quite like these colours, hopefully they're not too overwhelming to the eye, but I imagine if there was a person on zoom infront of the bulk of this it actually wouldn't be as bad/harsh on the eye. I also further adjusted the sliding blocks, adding in a couple more to create a bit of a staggered effect which I'm happy with. Now just finishing the remaining documentation + the final README.md, which will be on a seperate commit.
