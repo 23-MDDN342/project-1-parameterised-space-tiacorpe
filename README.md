@@ -1,5 +1,6 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10300842&assignment_repo_type=AssignmentRepo)
 ### 2023 MDDN342 Project 1: Parameterised Space
 
-24/3/2023
-Have finalised my colour palette; I'm going with a blue with gold accents look. I quite like these colours, hopefully they're not too overwhelming to the eye, but I imagine if there was a person on zoom infront of the bulk of this it actually wouldn't be as bad/harsh on the eye. I also further adjusted the sliding blocks, adding in a couple more to create a bit of a staggered effect which I'm happy with. Now just finishing the remaining documentation + the final README.md, which will be on a seperate commit.
+SHUFFLING SHAPES by Tia Corpe.
+This looping animation sketch was produced in p5.js, and intended to be used as a Zoom background. It is set to be viewed at various scales.
+Inspired by geometric shapes and patterns, the aim for Shuffling Shapes was to have multiple moving elements on the page that were not too overwhelming on the eyes. In combination with the bright, complimenting colour palette, the animation shows several different movements in different sizes and shapes.
