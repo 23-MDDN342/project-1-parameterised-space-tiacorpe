@@ -2672,7 +2672,7 @@
       //     e.eval2d('su*sv', 20, 20);
       // will return a two-dimensional array with 20x20 values from -1. to 1. multiplied together.
       //
-      // because the eval() is run in the browser, any code included will add
+      // because the eval() is run in the brower, any code included will add
       // functionality to the p5.ArrayEval object, e.g. p5.js math functions
       // (sin(), cos(), etc.) will work correctly.
       //
@@ -3795,7 +3795,7 @@
     if(_array.constructor == Float64Array) a = Array.prototype.slice.call(_array);
 
     var TERMWIDTH = 80; // columns (1 additional will be used for left margin)
-    var TERMHEIGHT = 23; // VT100 is 24 rows ('take back one kadam...')
+    var TERMHEIGHT = 23; // VT100 is 24 row ('take back one kadam...')
     var out = [];
     var si, phase;
     var i, j, k, len, wave;
@@ -3811,7 +3811,7 @@
     phase = 1.;
     for(i = 0; i < TERMHEIGHT; i++) {
       k = 0;
-      // add alternator to left margin of line - prevents browser consoles
+      // add alternator to left margin of line - prevents brower consoles
       // from interpreting duplicate lines and only printing them once:
       if(i%2) line= '~'; else line='|';
       // format line based on function being within phase boundary
